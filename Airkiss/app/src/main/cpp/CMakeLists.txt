@@ -17,7 +17,8 @@ add_library( # Sets the name of the library.
              SHARED
 
              # Provides a relative path to your source file(s).
-             native-lib.cpp )
+             native-lib.cpp
+             Box.cpp)
 add_library(airkiss SHARED IMPORTED)
 set(lib_src_DIR ${CMAKE_SOURCE_DIR}../../jniLibs/${ANDROID_ABI})
 set_target_properties( # Specifies the target library.
